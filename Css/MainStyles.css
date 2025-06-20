@@ -1,0 +1,159 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: beige;
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    width: 100%;
+    height: 100%;
+}
+
+header h1 {
+    inline-size: auto;
+}
+
+header {
+    display: flex;
+    align-items: center;      /*  centra todos items */
+    justify-content: flex-start; /* Espacio entre items */
+    gap: 20rem;  
+    width: 100%; 
+    height: 100%;        
+}
+
+header img {
+    height: 50px; 
+}
+
+header main {
+    flex: unset
+}
+
+header h1 {
+    margin: 0;
+}
+
+header input {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    background-color: #ff9800;
+    color: white;
+    border-radius: 5px;
+    border: none;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.2s;
+}
+
+header input:hover {
+    background-color: #e65100;
+}
+header input[type="text"] {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.logo-title {
+    color: inherit;
+    text-decoration: none;
+    font: inherit;
+}
+
+nav ul {
+    display: flex;
+    gap: 1rem;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+
+
+nav a {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    background-color: #ff9800;
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.2s;
+}
+
+nav a:hover {
+    background-color: #e65100;
+}
+
+nav a.active {
+    background-color: #ff9800;   
+    color: #fff;                 
+    opacity: 0.6;                
+    pointer-events: none;        
+    cursor: default;             
+    font-weight: bold;
+}
+
+.carousel-slide {
+    position: relative;
+    display: none;
+}
+
+.carousel-slide.active {
+    display: block;
+}
+
+.carousel-caption {
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+    width: 100%;
+    color: #fff;
+    background: rgba(0,0,0,0.5);
+    padding: 2rem;
+    text-align: center;
+    font-size: 1.2rem;
+    border-radius: 0 0 10px 10px;
+}
+
+.carousel-image {
+    width: 100%;
+    max-height: 500px; 
+    object-fit: cover; 
+    display: block;
+}
+
+.carousel-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0,0,0,0.5);
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    border-radius: 50%;
+    font-size: 1.5rem;
+    z-index: 2;
+}
+
+.carousel-btn.prev {
+    left: 10px;
+}
+
+.carousel-btn.next {
+    right: 10px;
+}
