@@ -1,0 +1,23 @@
+/* Estilos Generales */
+body {
+    background-color: beige;
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    display: flex;
+    flex: 1;
+    /* Ocupa todo el espacio disponible */
+    flex-direction: column;
+    /* Alinea los elementos en columna */
+    padding: 1rem;
+}
+

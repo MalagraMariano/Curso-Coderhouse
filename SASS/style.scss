@@ -1,0 +1,12 @@
+@import "./SASS/layout/header";
+@import "./SASS/layout/nav";
+@import "./SASS/layout/footer";
+@import "./SASS/layout/main";
+@import "./SASS/layout/shop";
+
+/*Reseteo pagina de formatos*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}

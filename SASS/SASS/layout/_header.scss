@@ -1,0 +1,63 @@
+header h1 {
+    inline-size: auto;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    /*  centra todos items */
+    justify-content: flex-start;
+    /* Espacio entre items */
+    gap: 20rem;
+    width: 100%;
+    height: 100%;
+}
+
+
+header img {
+    height: 50px;
+    ;
+}
+
+header main {
+    flex: unset
+}
+
+header h1 {
+    margin: 0;
+}
+
+header input {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    background-color: #ff9800;
+    color: white;
+    border-radius: 5px;
+    border: none;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.2s;
+}
+
+header input:hover {
+    background-color: #e65100;
+}
+
+header input[type="text"] {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.logo-title {
+    color: inherit;
+    text-decoration: none;
+    font: inherit;
+}
