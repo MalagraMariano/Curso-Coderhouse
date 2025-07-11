@@ -26,6 +26,7 @@ header h1 {
   margin: 0;
 }
 
+/* Estilos del logo y título */
 header input {
   display: inline-block;
   padding: 0.5rem 1rem;
@@ -53,6 +54,7 @@ header input[type=text] {
   display: flex;
   align-items: center;
   gap: 0.5rem;
+  transform: skew(-10deg);
 }
 
 .logo-title {
@@ -329,6 +331,26 @@ main {
   gap: 0.5rem;
 }
 
+/* Estilos de la oferta en la tienda con animación*/
+#ofertaShop {
+  background-color: #ff9800;
+  color: white;
+  text-align: center;
+  padding: 0.5rem;
+  font-weight: bold;
+  top: 0;
+  z-index: 10;
+  animation: fade-in-out 2s infinite;
+}
+
+@keyframes fade-in-out {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 /*Reseteo pagina de formatos*/
 * {
   margin: 0;

@@ -27,6 +27,7 @@ header h1 {
     margin: 0;
 }
 
+/* Estilos del logo y título */
 header input {
     display: inline-block;
     padding: 0.5rem 1rem;
@@ -54,6 +55,7 @@ header input[type="text"] {
     display: flex;
     align-items: center;
     gap: 0.5rem;
+    transform: skew(-10deg); /* Efecto de inclinación */
 }
 
 .logo-title {
