@@ -1,9 +1,11 @@
+/*Reseteo pagina de formatos*/
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* Estilos Generales */
 body {
     background-color: beige;
     font-family: "Oswald", sans-serif;
@@ -101,7 +103,8 @@ header input[type="text"] {
     text-decoration: none;
     font: inherit;
 }
-
+/***/
+/* Estilos de navegación */
 nav {
     position: relative;
     z-index: 10;
@@ -139,7 +142,8 @@ nav {
         justify-content: center;
     }
 }
-
+/** Fin Estilos de navegación */
+/* Estilos de navegación para pantallas grandes */
 @media (min-width: 769px) {
     nav {
         display: flex;
