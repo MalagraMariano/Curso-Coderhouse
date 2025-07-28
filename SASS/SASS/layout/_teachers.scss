@@ -1,0 +1,54 @@
+.teachers-main {
+  max-width: 800px;
+  margin: 0 auto;
+}
+.teachers-filter .filter-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  align-items: flex-end;
+  width: 100%;
+  flex-direction: column;
+}
+
+@media (min-width: 600px) {
+  .teachers-filter .filter-group {
+    flex-direction: row;
+    align-items: flex-end;
+  }
+  .teachers-filter input,
+  .teachers-filter select,
+  .teachers-filter button {
+    width: auto;
+    min-width: 120px;
+    flex: 1 1 150px;
+  }
+}
+
+.teachers-filter button {
+  white-space: nowrap;
+  font-weight: bold;
+}
+
+// Estilos para la lista de profesores usando flex box
+.teachers-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.teacher-card {
+ @extend %base-contact-card;
+}
+
+.teacher-card h4 {
+  margin-bottom: 0.5rem;
+  color: $color-terciario;
+}
+
+.teacher-info {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  font-size: 1rem;
+}

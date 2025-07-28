@@ -1,11 +1,13 @@
-@import "./SASS/utilities/base";
 @import "./SASS/utilities/variables";
+@import "./SASS/utilities/base";
 @import "./SASS/utilities/mixins";
 @import "./SASS/layout/header";
 @import "./SASS/layout/nav";
 @import "./SASS/layout/footer";
 @import "./SASS/layout/main";
 @import "./SASS/layout/shop";
+@import "./SASS/layout/createAccount";
+@import "./SASS/layout/teachers";
 
 /*Reseteo pagina de formatos*/
 * {

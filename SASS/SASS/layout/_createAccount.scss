@@ -1,0 +1,22 @@
+.form-create-account {
+  border: 2px solid $color-primario;
+  border-radius: 12px;
+  background: $color-blanco;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+  padding: 2rem 1.5rem;
+  margin: 0 auto;
+}
+
+.form-create-account h2 {
+  color: $color-primario-hover;
+}
+
+.form-create-account .btn-warning {
+  background: $color-primario;
+  border: none;
+  font-weight: bold;
+}
+
+.form-create-account .btn-warning:hover {
+  background: $color-primario-hover;
+}
