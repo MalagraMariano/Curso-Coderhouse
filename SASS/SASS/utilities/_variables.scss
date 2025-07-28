@@ -1,0 +1,41 @@
+// Colores principales
+$color-bg: #fffbe6;
+$color-bg-footer:#333;
+$color-primario: #ff9800;
+$color-primario-hover: #e65100;
+$color-secundario: #f4c681;
+$color-terciario: #4caf50;
+$color-texto: #222;
+$color-blanco: #fff;
+$color-sombra: rgba(0, 0, 0, 0.08);
+$color-sombra-hover: rgba(0, 0, 0, 0.12);
+$color-nav: #c9c6c1;
+
+// Bordes y radios
+$border-radius: 10px;
+$border-radius-btn: 5px;
+
+// Sombras
+$box-shadow: 0 2px 8px $color-sombra;
+$box-shadow-hover: 0 4px 16px $color-sombra-hover;
+
+// Espaciados
+$padding-card: 1rem;
+$padding-main: 1rem;
+$gap-catalogo: 2rem;
+$gap-catalogo-mobile: 1rem;
+
+// Tipografía
+$font-size-base: 16px;
+$font-size-lg: 18px;
+$font-size-h3: 1.1rem;
+$font-weight-bold: bold;
+$font-family: "Oswald", sans-serif;
+
+// Breakpoints
+$breakpoint-desktop: 900px;
+$breakpoint-mobile: 768px;
+
+// Otros
+$transition-base: 0.2s;
+$transition-transform: transform 0.2s;

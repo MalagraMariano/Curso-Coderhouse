@@ -1,24 +1,21 @@
 .catalogo {
+  @include flex-center(row, 2rem);
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 2rem;
   padding: 2rem 0;
 }
 
 .producto {
+  @extend %card-base;
   display: flex;
   flex-direction: column;
   align-items: center;
-  background: #fffbe6;
-  border-radius: 10px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
-  padding: 1rem;
   transition: transform 0.2s;
 }
 
 .producto:hover {
   transform: translateY(-5px) scale(1.03);
-  box-shadow: 0 4px 16px rgba(0,0,0,0.12);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
 }
 
 .producto img {
@@ -118,15 +115,8 @@
 
 /* Aside de filtros */
 .filtros {
-  background: #fffbe6;
-  border-radius: 10px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
-  padding: 1rem;
+  @extend %card-base;
   min-width: 180px;
-  height: fit-content;
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
 }
 
 .filtros h4 {
@@ -137,12 +127,12 @@
   font-size: 1rem;
   display: flex;
   align-items: center;
-  gap: 0.5rem;
+  gap: 1.5rem;
 }
 
 /* Estilos de la oferta en la tienda con animación*/
 #ofertaShop {
-  background-color: #ff9800;
+  background-color: #ff3700;
   color: white;
   text-align: center;
   padding: 0.5rem;
@@ -153,6 +143,34 @@
 }
 
 @keyframes fade-in-out {
-  0% { opacity: 0; }
-  100% { opacity: 1; }
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+/* Estilos para mobiles */
+@media (max-width: 900px) {
+  .shop-content {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .filtros {
+    flex-direction: row;
+    flex-wrap: wrap;
+    min-width: unset;
+    margin-bottom: 1rem;
+    justify-content: flex-start;
+    gap: 1.5rem;
+  }
+
+  .catalogo {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    padding: 1rem 0;
+  }
 }
