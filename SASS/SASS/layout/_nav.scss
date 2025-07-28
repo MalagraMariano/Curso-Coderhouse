@@ -45,7 +45,6 @@ nav {
 @media (min-width: $breakpoint-desktop) {
     nav {
         display: flex;
-        justify-content: center;
         /* Centra el contenido del nav */
         align-items: center;
         padding: 1rem;
@@ -71,6 +70,7 @@ nav {
     nav ul {
         display: flex;
         gap: 1rem;
+        margin-left: auto;
     }
 
     nav li {

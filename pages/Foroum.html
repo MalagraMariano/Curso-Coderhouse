@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Foro Mundo Guitarra</title>
-    <meta name="description" content="Mundo Guitarra es tu destino para todo lo relacionado con guitarras. Encuentra guitarras, accesorios, profesores y conecta con bandas."> 
+    <meta name="description"
+        content="Mundo Guitarra es tu destino para todo lo relacionado con guitarras. Encuentra guitarras, accesorios, profesores y conecta con bandas.">
     <meta name="keywords" content="guitarras, accesorios, profesores, bandas, foro, tienda de guitarras">
     <meta name="author" content="Mundo Guitarra Team">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -37,12 +38,46 @@
                         <li class="nav-item"><a class="nav-link active" href="Foroum.html">Foro</a></li>
                         <li class="nav-item"><a class="nav-link" href="Teachers.html">Profesores</a></li>
                         <li class="nav-item"><a class="nav-link" href="SearchBand.html">Buscar Tu banda</a></li>
-                     </ul>
+                    </ul>
                 </div>
             </div>
         </nav>
     </header>
-    <main></main>
+     <main class="foro-main container my-5">
+        <!-- Aside de tópicos -->
+        <aside class="foro-aside">
+            <h5 class="mb-3">Tópicos</h5>
+            <ul class="foro-topics-list">
+                <li><a href="#split-coil">Split coil en guitarra</a></li>
+                <li><a href="#pedalboard">Pedalboard favoritos</a></li>
+                <li><a href="#distorsion">Pedales distorsión</a></li>
+                <li><a href="#electronica">Electrónica</a></li>
+                <li><a href="#escalas-blues">Escalas de blues</a></li>
+            </ul>
+        </aside>
+
+        <!-- Sección principal del foro -->
+        <section class="foro-content">
+            <article id="split-coil" class="foro-topic mb-4">
+                <h3>¿Cómo configurar un split coil en tu guitarra?</h3>
+                <p>
+                    Para lograr un split coil necesitas comparar un potenciómetro push/pull de 500k y un humbucker que
+                    permita el split coil.<br>
+                    El push/pull te permite seleccionar entre sonido single coil y humbucker, brindando versatilidad a
+                    tu instrumento.<br>
+                    ¿Qué modelos recomiendan y qué experiencias tienen con esta modificación?
+                </p>
+            </article>
+            <!-- ...otros artículos si lo deseas... -->
+            <section class="foro-comments">
+                <h5>Comentarios</h5>
+                <form class="foro-comment-form mb-3">
+                    <textarea class="form-control mb-2" rows="3" placeholder="Escribe tu comentario..."></textarea>
+                    <button type="submit" class="btn-search">Enviar comentario</button>
+                </form>
+            </section>
+        </section>
+    </main>
     <footer>
         Mundo Guitarra &reg; | Contacto: <a href="mailto:info@mundoguitarra.com">info@mundoguitarra.com</a>
     </footer>
