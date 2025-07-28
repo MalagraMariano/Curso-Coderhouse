@@ -1,0 +1,8 @@
+.btn-search {
+  @extend %btn-search;
+  width: 100%;
+  display: block;
+  &:hover {
+    @extend %btn-search-hover;
+  }
+}

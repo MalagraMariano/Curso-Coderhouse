@@ -1,28 +1,29 @@
 .teachers-main {
-  max-width: 800px;
+  max-width: 1024px;
   margin: 0 auto;
 }
+
 .teachers-filter .filter-group {
   display: flex;
   flex-wrap: wrap;
   gap: 1rem;
-  align-items: flex-end;
+  align-items: center;
   width: 100%;
-  flex-direction: column;
+  justify-content: flex-start;
 }
 
-@media (min-width: 600px) {
-  .teachers-filter .filter-group {
-    flex-direction: row;
-    align-items: flex-end;
-  }
-  .teachers-filter input,
-  .teachers-filter select,
-  .teachers-filter button {
-    width: auto;
-    min-width: 120px;
-    flex: 1 1 150px;
-  }
+.teachers-filter input,
+.teachers-filter select {
+  min-width: 120px;
+  max-width: 200px;
+  width: 100%;;
+  flex: 1 1 150px;
+}
+
+.teachers-filter,
+.teachers-filter .filter-group {
+  overflow: visible !important;
+  position: static !important;
 }
 
 .teachers-filter button {
@@ -51,4 +52,14 @@
   flex-wrap: wrap;
   gap: 2rem;
   font-size: 1rem;
+}
+
+.btn-orange, // clase personalizada para botones naranja
+.teachers-filter button {
+  @extend %btn-search;
+}
+
+.btn-orange:hover,
+.teachers-filter button:hover {
+  background: $color-primario-hover;
 }

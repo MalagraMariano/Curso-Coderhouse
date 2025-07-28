@@ -4,7 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Arma tu Banda en Mundo Guitarra</title>
+    <meta name="description" content="Encuentra tu banda ideal en Mundo Guitarra. Busca por nombre, país, provincia y género musical.">
+    <meta name="keywords" content="banda, música, guitarra, rock, jazz, blues, pop, funk">
+    <meta name="author" content="Mundo Guitarra Team">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Share+Tech&display=swap"
@@ -33,12 +36,69 @@
                         <li class="nav-item"><a class="nav-link" href="Foroum.html">Foro</a></li>
                         <li class="nav-item"><a class="nav-link" href="Teachers.html">Profesores</a></li>
                         <li class="nav-item"><a class="nav-link active" href="SearchBand.html">Buscar Tu banda</a></li>
-                     </ul>
+                    </ul>
                 </div>
             </div>
         </nav>
     </header>
-    <main></main>
+    <main class="container my-5">
+        <!-- Filtros de búsqueda -->
+        <form class="mb-4">
+            <div class="row g-2 align-items-end">
+                <div class="col-12 col-md-2">
+                    <input type="text" class="form-control" placeholder="Nombre de banda">
+                </div>
+                <div class="col-12 col-md-2">
+                    <input type="text" class="form-control" placeholder="País">
+                </div>
+                <div class="col-12 col-md-2">
+                    <input type="text" class="form-control" placeholder="Provincia">
+                </div>
+                <div class="col-12 col-md-2">
+                    <input type="text" class="form-control" placeholder="Localidad">
+                </div>
+                <div class="col-12 col-md-2">
+                    <select class="form-select">
+                        <option value="">Género</option>
+                        <option>Rock</option>
+                        <option>Blues</option>
+                        <option>Jazz</option>
+                        <option>Pop</option>
+                        <option>Funk</option>
+                    </select>
+                </div>
+                <div class="col-12 col-md-2 d-grid">
+                    <button type="submit" class="btn-search">
+                        <i class="bi bi-search"></i> Buscar
+                    </button>
+                </div>
+            </div>
+        </form>
+
+        <!-- Listado de bandas -->
+        <section class="band-list">
+            <div class="card mb-3">
+                <div class="card-body">
+                    <h5 class="card-title">Jazz Fuzz Band</h5>
+                    <p class="card-text">Somos una banda de música de jazz que tocamos hace 20 años diversos clásicos de
+                        fuzz jazz.</p>
+                    <button class="btn-search w-50">Contactarse</button>
+                </div>
+            </div>
+            <div class="card mb-3">
+                <div class="card-body">
+                    <h5 class="card-title">Rockeros del Sur</h5>
+                    <p class="card-text">Banda de rock clásico con 10 años de trayectoria, tocamos covers y temas
+                        propios.</p>
+                    <button class="btn-search w-50">Contactarse</button>
+                </div>
+            </div>
+            <!-- Agrega más bandas aquí -->
+        </section>
+    </main>
+
+    <!-- Bootstrap Icons CDN (en tu <head> si no lo tienes) -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <footer>
         Mundo Guitarra &reg; | Contacto: <a href="mailto:info@mundoguitarra.com">info@mundoguitarra.com</a>
     </footer>
